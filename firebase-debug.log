@@ -1,0 +1,239 @@
+[debug] [2024-12-17T10:45:12.150Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T10:45:12.154Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AWELEPAGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-12-17T10:45:12.154Z] CLI Version:   13.29.1
+[debug] [2024-12-17T10:45:12.155Z] Platform:      win32
+[debug] [2024-12-17T10:45:12.155Z] Node Version:  v22.12.0
+[debug] [2024-12-17T10:45:12.155Z] Time:          Tue Dec 17 2024 10:45:12 GMT+0000 (heure moyenne de Greenwich)
+[debug] [2024-12-17T10:45:12.156Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T10:45:12.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T10:45:12.350Z] > authorizing via signed-in user (touracobrand@gmail.com)
+[debug] [2024-12-17T10:45:12.467Z] java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+
+[debug] [2024-12-17T10:45:12.468Z] Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+
+[debug] [2024-12-17T10:45:12.491Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: firestore"}}
+[debug] [2024-12-17T10:45:12.516Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-17T10:45:12.516Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-17T10:45:12.516Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-17T10:45:12.516Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-12-17T10:45:12.525Z] [hub] writing locator at C:\Users\AWELEP~1\AppData\Local\Temp\hub-diabetecare-africa-dev.json
+[info] i  firestore: downloading cloud-firestore-emulator-v1.19.8.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.19.8.jar..."}}
+[debug] [2024-12-17T10:45:12.547Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 
+[debug] [2024-12-17T10:45:12.951Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 200
+[debug] [2024-12-17T10:45:12.951Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar [stream]
+[debug] [2024-12-17T10:45:28.370Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-12-17T10:45:28.370Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-12-17T10:45:28.370Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\AWELEPAGE\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","diabetecare-africa-dev","--rules","C:\\Users\\AWELEPAGE\\CascadeProjects\\Diabete-Care-Africaweb\\firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\AWELEPAGE\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"diabetecare-africa-dev\",\"--rules\",\"C:\\\\Users\\\\AWELEPAGE\\\\CascadeProjects\\\\Diabete-Care-Africaweb\\\\firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-12-17T10:45:30.222Z] Dec 17, 2024 10:45:30 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 17, 2024 10:45:30 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9150\r\n"}}
+[debug] [2024-12-17T10:45:30.353Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-12-17T10:45:30.354Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\r\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\r\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
+[debug] [2024-12-17T10:45:30.579Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
+[debug] [2024-12-17T10:45:30.759Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
+[debug] [2024-12-17T10:45:30.760Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
+[debug] [2024-12-17T10:45:31.931Z] Data is 3615311
+[debug] [2024-12-17T10:45:31.932Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:31.932Z] [unzip] Processing entry: client\
+[debug] [2024-12-17T10:45:31.932Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\
+[debug] [2024-12-17T10:45:31.935Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2024-12-17T10:45:31.935Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-12-17T10:45:31.935Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.936Z] [unzip] Writing file: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\favicon-16x16.png
+[debug] [2024-12-17T10:45:31.941Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2024-12-17T10:45:31.941Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-12-17T10:45:31.941Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.942Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\safari-pinned-tab.svg
+[debug] [2024-12-17T10:45:31.961Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2024-12-17T10:45:31.961Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-12-17T10:45:31.962Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.963Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\favicon.ico
+[debug] [2024-12-17T10:45:31.966Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
+[debug] [2024-12-17T10:45:31.966Z] [unzip] Processing entry: client\index.html
+[debug] [2024-12-17T10:45:31.966Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.967Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\index.html
+[debug] [2024-12-17T10:45:31.970Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2024-12-17T10:45:31.970Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-12-17T10:45:31.970Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.971Z] [unzip] Writing file: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-192x192.png
+[debug] [2024-12-17T10:45:31.974Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2024-12-17T10:45:31.975Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-12-17T10:45:31.975Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.976Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\apple-touch-icon.png
+[debug] [2024-12-17T10:45:31.978Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2024-12-17T10:45:31.978Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-12-17T10:45:31.978Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.979Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-512x512.png
+[debug] [2024-12-17T10:45:31.981Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2024-12-17T10:45:31.981Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-12-17T10:45:31.981Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.982Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\manifest.json
+[debug] [2024-12-17T10:45:31.985Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-12-17T10:45:31.985Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-12-17T10:45:31.985Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.986Z] [unzip] Writing file: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\robots.txt
+[debug] [2024-12-17T10:45:31.987Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2024-12-17T10:45:31.988Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-12-17T10:45:31.988Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:31.990Z] [unzip] Writing file: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\mstile-150x150.png
+[debug] [2024-12-17T10:45:31.992Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:31.992Z] [unzip] Processing entry: client\assets\
+[debug] [2024-12-17T10:45:31.992Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\
+[debug] [2024-12-17T10:45:31.993Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
+[debug] [2024-12-17T10:45:31.993Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js.map
+[debug] [2024-12-17T10:45:31.993Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-12-17T10:45:31.994Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js.map
+[debug] [2024-12-17T10:45:32.106Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
+[debug] [2024-12-17T10:45:32.106Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js
+[debug] [2024-12-17T10:45:32.106Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-12-17T10:45:32.107Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js
+[debug] [2024-12-17T10:45:32.136Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2024-12-17T10:45:32.136Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2024-12-17T10:45:32.137Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2024-12-17T10:45:32.138Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-BdgySamB.css
+[debug] [2024-12-17T10:45:32.145Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:32.145Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-12-17T10:45:32.145Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\
+[debug] [2024-12-17T10:45:32.146Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-12-17T10:45:32.146Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-12-17T10:45:32.146Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions
+[debug] [2024-12-17T10:45:32.147Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\default-extension.png
+[debug] [2024-12-17T10:45:32.149Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:32.149Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-12-17T10:45:32.149Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\
+[debug] [2024-12-17T10:45:32.150Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-12-17T10:45:32.150Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-12-17T10:45:32.150Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\img
+[debug] [2024-12-17T10:45:32.150Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\database.png
+[debug] [2024-12-17T10:45:32.153Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:32.153Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-12-17T10:45:32.153Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\
+[debug] [2024-12-17T10:45:32.154Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-12-17T10:45:32.154Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-12-17T10:45:32.154Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.155Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-12-17T10:45:32.158Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-12-17T10:45:32.158Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-12-17T10:45:32.158Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.159Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-12-17T10:45:32.161Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-12-17T10:45:32.161Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-12-17T10:45:32.161Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.162Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-12-17T10:45:32.165Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-12-17T10:45:32.165Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-12-17T10:45:32.165Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.165Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-12-17T10:45:32.168Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-12-17T10:45:32.168Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-12-17T10:45:32.168Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.169Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-12-17T10:45:32.172Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-12-17T10:45:32.172Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-12-17T10:45:32.172Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.173Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-12-17T10:45:32.176Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-12-17T10:45:32.176Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-12-17T10:45:32.176Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.176Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-12-17T10:45:32.178Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-12-17T10:45:32.179Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-12-17T10:45:32.179Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.179Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-12-17T10:45:32.181Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-12-17T10:45:32.181Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-12-17T10:45:32.182Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.183Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-12-17T10:45:32.185Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-12-17T10:45:32.185Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-12-17T10:45:32.185Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.186Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-12-17T10:45:32.188Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-12-17T10:45:32.188Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-12-17T10:45:32.188Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.189Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-12-17T10:45:32.190Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-12-17T10:45:32.191Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-12-17T10:45:32.191Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.191Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-12-17T10:45:32.193Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-12-17T10:45:32.193Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-12-17T10:45:32.193Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2024-12-17T10:45:32.193Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-12-17T10:45:32.195Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-12-17T10:45:32.195Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-12-17T10:45:32.195Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:32.195Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\browserconfig.xml
+[debug] [2024-12-17T10:45:32.197Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2024-12-17T10:45:32.197Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-12-17T10:45:32.197Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2024-12-17T10:45:32.197Z] [unzip] Writing file: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\client\favicon-32x32.png
+[debug] [2024-12-17T10:45:32.199Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:32.199Z] [unzip] Processing entry: server\
+[debug] [2024-12-17T10:45:32.199Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\
+[debug] [2024-12-17T10:45:32.200Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
+[debug] [2024-12-17T10:45:32.200Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2024-12-17T10:45:32.200Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-12-17T10:45:32.200Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs.map
+[debug] [2024-12-17T10:45:32.213Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
+[debug] [2024-12-17T10:45:32.213Z] [unzip] Processing entry: server\server.mjs
+[debug] [2024-12-17T10:45:32.213Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2024-12-17T10:45:32.214Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs
+[debug] [2024-12-17T10:45:32.225Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-12-17T10:45:32.225Z] [unzip] Processing entry: server\assets\
+[debug] [2024-12-17T10:45:32.225Z] [unzip] mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\assets\
+[debug] [2024-12-17T10:45:32.226Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2024-12-17T10:45:32.226Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-12-17T10:45:32.226Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-12-17T10:45:32.226Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-12-17T10:45:32.228Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2024-12-17T10:45:32.228Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-12-17T10:45:32.228Z] [unzip] else mkdir: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2024-12-17T10:45:32.229Z] [unzip] deflating: C:\Users\AWELEPAGE\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-12-17T10:45:32.244Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect EACCES ::1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-12-17T10:47:18.787Z] Dec 17, 2024 10:47:18 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 17, 2024 10:47:18 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-12-17T10:47:18.835Z] Dec 17, 2024 10:47:18 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 17, 2024 10:47:18 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-12-17T10:47:19.055Z] Dec 17, 2024 10:47:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 17, 2024 10:47:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2024-12-17T11:18:44.569Z] Dec 17, 2024 11:18:44 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dec 17, 2024 11:18:44 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
